@@ -1,0 +1,341 @@
+    /* NAVBAR + page d'accueil */
+
+nav {
+	margin: 27px auto 0;
+	position: relative;
+	width: 800px;
+	height: 50px;
+	background-color: #000000;
+	border-radius: 8px;
+	font-size: 0;
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+} 
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 110px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
+a:nth-child(4) {
+	width: 160px;
+}
+a:nth-child(5) {
+	width: 120px;
+}
+
+a:nth-child(6) {
+	width: 120px;
+}
+
+nav .start-home, a:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 0;
+	background-color: #1abc9c;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 100px;
+	background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+	width: 100px;
+	left: 210px;
+	background-color: #3498db;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+	width: 160px;
+	left: 310px;
+	background-color: #9b59b6;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+	width: 120px;
+	left: 470px;
+	background-color: #e67e22;
+}
+
+nav .start-contact, a:nth-child(6):hover~.animation {
+	width: 130px;
+	left: 580px;
+	background-color: #fff020;
+}
+
+.body_pageaccueil{
+    background-image: url(https://anything-ispossible.com/wp-content/uploads/2017/08/club-de-lecture-anything-is-possible.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+} 
+
+
+.buttondeco{
+ width: 100px;
+ height: 100px;
+ background-color: red;
+ display: flex;
+ justify-content: center;
+}
+
+/* CSS PAGE CONNEXCTION */
+
+.body_connexion{
+    background-color: black;
+}
+      *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -100px;
+    top: -100px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+}
+form{
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.password{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+:placeholder{
+    color: #e5e5e5;
+}
+.buttonco{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
+}
+
+  /* CSS INSCRIPTION */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.body_inscription{
+    display: flex;
+    justify-content:center;
+    flex-direction: columns;
+    align-items: center;
+    background-color: #faf4f4;
+    font-family: 'Roboto', sans-serif;
+}
+.moduleinsccri{
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 40px 60px;
+    border-radius: 10px;
+    min-width: 100px;
+}
+.titi{
+    position: absolute;
+    color: #eb7371;
+    text-align:center;
+    margin-top: -40px;
+    margin-left: 70px;
+   
+}
+
+
+
+form .inputs {
+    display: flex;
+    flex-direction: column;
+}
+form .inputs input[type='text'], input[type='password']{
+    padding: 15px;
+    border:none;
+    border-radius: 5px;
+    background-color:#eb7371;
+    outline:none;
+    margin-bottom: 15px;
+    
+}
+
+.bubu{
+    padding: 15px 25px;
+    margin-top:10px;
+    border-radius: 5px;
+    border:none;
+    font-size: 15px;
+    color: #fff;
+    background-color: #eb7371;
+    outline:none;
+    cursor:pointer;
+}
+
+/* CSS PAGE PROFIL */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.body_profil{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.moduleprofil{
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 40px 60px;
+    border-radius: 10px;
+    min-width: 100px;
+}
+.modifier{
+    position: absolute;
+    color: #eb7371;
+    text-align:center;
+    margin-top: -30px;
+    margin-right: 50px;
+    width: auto;
+}
+
+form .inputs2 {
+    display: flex;
+    flex-direction: column;
+}
+form .inputs2 input[type='text'], input[type='password']{
+    padding: 15px;
+    border:none;
+    border-radius: 5px;
+    background-color:#eb7371;
+    outline:none;
+    margin-bottom: 15px;
+}
+
+.bubu{
+    padding: 15px 25px;
+    margin-top:10px;
+    border-radius: 5px;
+    border:none;
+    font-size: 15px;
+    color: #fff;
+    background-color: #eb7371;
+    outline:none;
+    cursor:pointer;
+}
